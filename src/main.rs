@@ -21,7 +21,7 @@ fn main() {
         .pages
         .iter()
         .filter(|Page { title, lines }| {
-            title.contains("lab") || contains_pattern_in_lines(lines, "#hirano-lab")
+            title.contains("本") || contains_pattern_in_lines(lines, "#book")
         })
         .cloned()
         .collect();
